@@ -40,12 +40,16 @@ nav ul li a {
     text-decoration: none;
     font-size: 24px;
 }
+nav ul li a:hover {
+  color: mediumturquoise;
+}
 #hamburger {
     float: right;
     color: white;
     margin-top: auto;
     display: none;
 }
+
 /*strona główna*/
 #cards {
     margin: 100px;
@@ -81,6 +85,7 @@ footer {
     nav ul {
         padding: 0px;
     }
+
     #nav-links {
         margin-top: 78px;
         position: absolute;
@@ -90,6 +95,9 @@ footer {
         width: 100%;
         height: 100%;
         background-color: #200f21;
+    }
+    #nav-links a:hover{
+        color: mediumturquoise;
     }
 
     #hamburger {
@@ -103,5 +111,13 @@ footer {
         grid-template-rows: 300px;
         align-items: center;
         color: white;
+    }
+    footer {
+        width: 100%;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
     }
 }
