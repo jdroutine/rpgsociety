@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+
+{% block characters %}
+
+{% for character in object_list %}
+
+    <div>
+        <h1>{{character.name}}</h1>
+        <img src="" alt="">
+        <p>Typ: {{character.type}} </p>
+        <p>Wiek: {{character.age}}</p>
+    </div>
+
+{% endfor %}
+{% endblock characters %}
