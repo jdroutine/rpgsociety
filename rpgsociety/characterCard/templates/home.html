@@ -1,15 +1,17 @@
 {% extends 'index.html' %}
 
-{% block characters %}
+{% block content %}
+<article id="cards">
 
-{% for character in object_list %}
+    {% for character in object_list %}
 
     <div>
         <h2>{{character.name}}</h2>
-        <img src="" alt="">
+        <img src="../static/images/anders.jpg" alt="">
         <p>Typ: {{character.type}} </p>
         <p>Wiek: {{character.age}}</p>
     </div>
 
-{% endfor %}
-{% endblock characters %}
+    {% endfor %}
+</article>
+{% endblock content %}

@@ -16,32 +16,35 @@
 <body>
     <nav>
         <div id="logo">
-            <img src="../static/images/rpgsocietyLogo.png" alt="">
+            <a href=""><img src="../static/images/rpgsocietyLogo.png" alt=""></a>
         </div>
         <ul>
             <div id="nav-links">
                 <li><a href="">Postacie</a></li>
                 <li><a href="">Mapa</a></li>
                 <li><a href="">Galeria</a></li>
+                <div id="social-links">
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                </div>
             </div>
             <div id="hamburger">
-                <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a>
+                </li>
             </div>
         </ul>
     </nav>
     <section>
-        <article id="cards">
-            {% block characters %}
+        {% block content %}
 
-            {% endblock characters %}
-        </article>
+        {% endblock content %}
     </section>
     <footer>
         <div>
             <h3>&copy; 2021 by jd.devroutine</h3>
         </div>
     </footer>
-<script src="../static/js/nav.js"></script>
+    <script src="../static/js/nav.js"></script>
 </body>
 
 </html>
