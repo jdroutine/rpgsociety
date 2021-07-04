@@ -5,6 +5,7 @@
 body {
     font-family: "Dosis", sans-serif;
     --main-color: #200f21;
+    --hoover-color: mediumturquoise;
     background-image: url("../images/bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -40,9 +41,9 @@ nav ul li a {
     text-decoration: none;
 }
 nav ul li a:hover {
-    color: mediumturquoise;
+    color: var(--hoover-color);
 }
-#social-links{
+#social-links {
     float: right;
 }
 #hamburger {
@@ -51,6 +52,11 @@ nav ul li a:hover {
     margin-top: auto;
     display: none;
 }
+/*aside*/
+aside{
+    width: 100%;
+}
+
 
 /*strona główna*/
 #cards {
@@ -65,8 +71,8 @@ nav ul li a:hover {
 #cards div {
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.7);
-} 
-#cards div:hover{
+}
+#cards div:hover {
     transform: scale(1.1);
 }
 #cards h2 {
@@ -74,10 +80,18 @@ nav ul li a:hover {
     font-size: 25px;
     margin-bottom: 10px;
 }
+#cards h2 :hover {
+    color: mediumturquoise;
+}
+#cards h2 a {
+    color: white;
+    text-decoration: none;
+}
+
 /*stopka*/
 footer {
     width: 100%;
-    background-color:var(--main-color);
+    background-color: var(--main-color);
     color: white;
     text-align: center;
     position: absolute;
@@ -86,7 +100,7 @@ footer {
 @media screen and (max-width: 1024px) {
     /*nawigacja*/
     nav {
-        background-color:var(--main-color);
+        background-color: var(--main-color);
         position: fixed;
         top: 0;
         width: 100%;
@@ -104,17 +118,23 @@ footer {
         align-items: center;
         height: auto;
         width: 100%;
-        background-color:var(--main-color);
+        background-color: var(--main-color);
     }
     #nav-links a:hover {
-        color: mediumturquoise;
+        color:var(--hoover-color);
     }
-    #social-links{
+    #social-links {
         margin: 20px;
     }
 
     #hamburger {
         display: inline;
+    }
+    /*aside*/
+    aside{
+        margin-top: 100px;
+        display: flex;
+
     }
     /*strona główna*/
     #cards {
@@ -126,7 +146,7 @@ footer {
         margin-top: 120px;
         color: white;
     }
-    #cards div{
+    #cards div {
         margin-bottom: 20px;
     }
     /*stopka*/

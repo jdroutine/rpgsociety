@@ -20,7 +20,7 @@
         </div>
         <ul>
             <div id="nav-links">
-                <li><a href="">Postacie</a></li>
+                <li><a href="{% url 'home' %}">Postacie</a></li>
                 <li><a href="">Mapa</a></li>
                 <li><a href="">Galeria</a></li>
                 <div id="social-links">
@@ -34,11 +34,9 @@
             </div>
         </ul>
     </nav>
-    <section>
         {% block content %}
 
         {% endblock content %}
-    </section>
     <footer>
         <div>
             <h3>&copy; 2021 by jd.devroutine</h3>

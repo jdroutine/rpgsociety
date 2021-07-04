@@ -1,20 +1,22 @@
 {% extends 'index.html' %}
 
 {% block content %}
-<article id="cards">
+<section>
+    <article id="cards">
 
-    {% for character in object_list %}
+        {% for character in object_list %}
 
-    <div>
-        <h2>{{character.name}}</h2>
-        <img src="../static/images/anders.jpg" alt="">
-        <p>Typ: {{character.type}} </p>
-        <p>Wiek: {{character.age}}</p>
-        <p>Stan: {{character.status}}</p>
-        <p>Punkty szczęścia: {{character.luck}}</p>
-        <p>Przedmiot: {{character.item}}</p>
-    </div>
+        <div>
+            <h2><a href="{% url 'characterDetail' character.pk %}">{{character.name}}</a></h2>
+            <img src="../static/images/anders.jpg" alt="">
+            <p>Typ: {{character.type}} </p>
+            <p>Wiek: {{character.age}}</p>
+            <p>Stan: {{character.status}}</p>
+            <p>Punkty szczęścia: {{character.luck}}</p>
+            <p>Przedmiot: {{character.item}}</p>
+        </div>
 
-    {% endfor %}
-</article>
+        {% endfor %}
+    </article>
+</section>
 {% endblock content %}
