@@ -9,6 +9,12 @@ class HomeView(ListView):
     model = Character
     template_name = "home.html"
 
+
 class CharacterDetailView(DetailView):
     model = Character
     template_name = "characterDetail.html"
+
+
+class CharacterView(ListView):
+    model = Character
+    template_name = "character.html"
