@@ -96,7 +96,7 @@ aside img {
     }
     
 #youtube iframe {
-    border: 1px #ffffff solid;
+    border: 1px solid #e6a7f2;
     position: absolute;
     top: 0;
     left: 0;
@@ -116,6 +116,7 @@ aside img {
 #cards div {
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #e6a7f2;
 }
 #cards div:hover {
     transform: scale(1.1);
@@ -142,7 +143,7 @@ aside img {
 .grid-container > article {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 10px;
-    border: 1px solid #f7d7fd;
+    border: 1px solid #e6a7f2;
 }
 .grid-container .item1 .content {
     column-count: 2;
