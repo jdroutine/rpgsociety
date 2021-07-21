@@ -5,7 +5,7 @@
 body {
     font-family: "Dosis", sans-serif;
     --main-color: #200f21;
-    --hoover-color: mediumturquoise;
+    --hoover-color: rgb(58, 211, 206);
     background-image: url("../images/bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -47,6 +47,7 @@ nav ul li a:hover {
     float: right;
 }
 #hamburger {
+    padding-top: 20px;
     float: right;
     color: white;
     margin-top: auto;
@@ -97,6 +98,7 @@ aside img {
     
 #youtube iframe {
     border: 1px solid #e6a7f2;
+    box-shadow: 0px 0px 20px var(--hoover-color);
     position: absolute;
     top: 0;
     left: 0;
@@ -116,10 +118,13 @@ aside img {
 #cards div {
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.7);
-    border: 1px solid #e6a7f2;
+    border: 3px solid #e6a7f2;
+    box-shadow: 2px -2px 5px var(--hoover-color);
+   
 }
 #cards div:hover {
     transform: scale(1.1);
+    box-shadow: 5px -5px 5px var(--hoover-color);
 }
 #cards h2 {
     font-family: "DotGothic16", sans-serif;
@@ -143,7 +148,9 @@ aside img {
 .grid-container > article {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 10px;
-    border: 1px solid #e6a7f2;
+    border: 2px solid #e6a7f2;
+    box-shadow: 2px -2px 2px var(--hoover-color);
+    
 }
 .grid-container .item1 .content {
     column-count: 2;
@@ -159,6 +166,7 @@ aside img {
 footer {
     display: block;
     width: 100%;
+    height: 30px;
     background-color: var(--main-color);
     color: white;
     text-align: center;
@@ -214,7 +222,7 @@ footer {
         color: white;
     }
     #cards div {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
     #home {
         display: grid;
