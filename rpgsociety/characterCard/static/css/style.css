@@ -6,6 +6,7 @@ body {
     font-family: "Dosis", sans-serif;
     --main-color: #200f21;
     --hoover-color: rgb(58, 211, 206);
+    --border-color: #e6a7f2;
     background-image: url("../images/bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -64,7 +65,7 @@ aside img {
 /*strona główna*/
 #home {
     height: 100%;
-    margin: 50px;
+    margin: 100px 50px;
     padding: 20px;
     color: #ffffff;
     display: grid;
@@ -78,7 +79,7 @@ aside img {
 #home h1 {
     font-size: 50px;
     font-family: "DotGothic16", sans-serif;
-    color: mediumturquoise;
+    color: var(--hoover-color);
     font-weight: 800;
     letter-spacing: 2px;
 }
@@ -118,7 +119,7 @@ aside img {
 #cards div {
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.7);
-    border: 3px solid #e6a7f2;
+    border: 3px solid var(--border-color);
     box-shadow: 2px -2px 5px var(--hoover-color);
    
 }
@@ -132,7 +133,7 @@ aside img {
     margin-bottom: 10px;
 }
 #cards h2 :hover {
-    color: mediumturquoise;
+    color: var(--hoover-color);
 }
 #cards h2 a {
     color: white;
@@ -148,7 +149,7 @@ aside img {
 .grid-container > article {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 10px;
-    border: 2px solid #e6a7f2;
+    border: 2px solid var(--border-color);
     box-shadow: 2px -2px 2px var(--hoover-color);
     
 }
@@ -157,6 +158,9 @@ aside img {
 }
 .grid-container .item3 .content {
     column-count: 2;
+}
+.title{
+    border-bottom: 1px solid var(--hoover-color);
 }
 .content {
     padding-top: 10px;
@@ -170,7 +174,7 @@ footer {
     background-color: var(--main-color);
     color: white;
     text-align: center;
-    position: fixed;
+    position: relative;
     bottom: 0;
 }
 @media screen and (max-width: 1024px) {
@@ -252,7 +256,7 @@ footer {
     #home h1 {
         font-size: 30px;
         font-family: "DotGothic16", sans-serif;
-        color: mediumturquoise;
+        color: var(--hoover-color);
         font-weight: 800;
         letter-spacing: 2px;
     }
