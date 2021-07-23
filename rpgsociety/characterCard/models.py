@@ -23,6 +23,7 @@ class Character(models.Model):
     )
 
     name = models.CharField(max_length=255)
+    avatar = models.ImageField(blank=True, upload_to='images')
     type = models.CharField(max_length=100)
     age = models.CharField(max_length=3)
     motivation = models.CharField(max_length=50, null=True)
@@ -47,5 +48,6 @@ class Character(models.Model):
     investigation = models.IntegerField(choices=skillChoices, null=True)
     understanding = models.IntegerField(choices=skillChoices, null=True)
     empathy = models.IntegerField(choices=skillChoices, null=True)
+
     def __str__(self):
         return self.name
