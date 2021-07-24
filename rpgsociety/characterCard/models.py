@@ -13,7 +13,7 @@ class Character(models.Model):
         ('Zranienie', 'Injury'),
         ('Wycieńczenie', 'Weakness')
     )
-
+    # skill point choices
     skillChoices = (
         ('1', '1'),
         ('2', '2'),
