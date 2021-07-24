@@ -165,10 +165,17 @@ aside img {
 .content {
     padding-top: 10px;
 }
-
+.content i {
+    width: 20px;
+    color: var(--border-color);
+}
+.content span {
+    font-weight: bold;
+    font-family: "DotGothic16", sans-serif;
+    color: var(--border-color);
+}
 /*stopka*/
 footer {
-  
     width: 100%;
     height: 30px;
     background-color: var(--main-color);
