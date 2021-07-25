@@ -171,7 +171,6 @@ aside img {
 }
 .content span {
     font-weight: bold;
-    font-family: "DotGothic16", sans-serif;
     color: var(--border-color);
 }
 /*stopka*/

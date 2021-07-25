@@ -6,7 +6,7 @@ from django.db import models
 class Character(models.Model):
     # status choices
     statusChoices = (
-        ('Normalny', 'Normal'),
+        ('Brak', 'None'),
         ('Zdenerwowanie', 'Nervousness'),
         ('Przerażenie', 'Horror'),
         ('Zmęczenie', 'Fatigue'),
@@ -15,11 +15,11 @@ class Character(models.Model):
     )
     # skill point choices
     skillChoices = (
-        ('1', '1'),
-        ('2', '2'),
-        ('3', '3'),
-        ('4', '4'),
-        ('5', '5'),
+        (1, '1'),
+        (2, '2'),
+        (3, '3'),
+        (4, '4'),
+        (5, '5')
     )
 
     name = models.CharField(max_length=255)
@@ -32,7 +32,11 @@ class Character(models.Model):
     pride = models.CharField(max_length=50, null=True)
     description = models.CharField(max_length=255, null=True)
     song = models.CharField(max_length=255, null=True)
-    status = models.CharField(max_length=50, choices=statusChoices, null=True)
+    status1 = models.CharField(max_length=50, choices=statusChoices, null=True)
+    status2 = models.CharField(max_length=50, choices=statusChoices, null=True)
+    status3 = models.CharField(max_length=50, choices=statusChoices, null=True)
+    status4 = models.CharField(max_length=50, choices=statusChoices, null=True)
+    status5 = models.CharField(max_length=50, choices=statusChoices, null=True)
     luck = models.IntegerField(choices=skillChoices, null=True)
     item = models.CharField(max_length=50, null=True)
 
@@ -48,6 +52,14 @@ class Character(models.Model):
     investigation = models.IntegerField(choices=skillChoices, null=True)
     understanding = models.IntegerField(choices=skillChoices, null=True)
     empathy = models.IntegerField(choices=skillChoices, null=True)
+
+    def __str__(self):
+        return self.name
+
+
+class Home(models.Model):
+    tile = models.CharField(max_length=255)
+    body = models.CharField(max_length=255)
 
     def __str__(self):
         return self.name
