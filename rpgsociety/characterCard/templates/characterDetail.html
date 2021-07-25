@@ -7,6 +7,9 @@
 
 <section class="grid-container">
     <article class="item1">
+        <div class="title">
+            <h2>Informacje</h2>
+        </div>
         <div class="content">
             <p>Imię:&nbsp;<span>{{character.name}}</span></p>
             <p>Wiek:&nbsp;<span>{{character.age}}</span></p>
@@ -29,10 +32,10 @@
             <h2>Cechy</h2>
         </div>
         <div class="content">
-            <p><i class="fas fa-male"></i>&nbsp;Ciało:&nbsp;<span>1</span></p>
-            <p><i class="fas fa-cogs"></i>&nbsp;Technika:&nbsp;<span>1</span></p>
-            <p><i class="far fa-heart"></i>&nbsp;Serce:&nbsp; <span>1</span></p>
-            <p><i class="fas fa-brain"></i>&nbsp;Umysł:&nbsp;<span>1</span></p>
+            <p><i class="fas fa-male"></i>&nbsp;Ciało:&nbsp;<span>{{character.body}}</span></p>
+            <p><i class="fas fa-cogs"></i>&nbsp;Technika:&nbsp;<span>{{character.technique}}</span></p>
+            <p><i class="far fa-heart"></i>&nbsp;Serce:&nbsp; <span>{{character.heart}}</span></p>
+            <p><i class="fas fa-brain"></i>&nbsp;Umysł:&nbsp;<span>{{character.mind}}</span></p>
         </div>
     </article>
 
