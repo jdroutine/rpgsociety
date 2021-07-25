@@ -17,11 +17,11 @@
             <p>Problem:&nbsp;<span>{{character.problem}}</span></p>
             <p>Duma:&nbsp;<span>{{character.pride}}</span></p>
             <p>Opis:&nbsp;<span>{{character.description}}</span></p>
-            <p>Ulubiony kawałek:&nbsp;{{character.song}}</p>
+            <p>Ulubiony kawałek:&nbsp;<span>{{character.song}}</span></p>
             <div class="item1a">
-                <p>Typ:&nbsp;<span></span></p>
-                <p>Punkty szczęścia:&nbsp;<span></span></p>
-                <p>Oparcie:&nbsp;<span></span></p>
+                <p>Typ:&nbsp;<span>{{character.type}}</span></p>
+                <p>Punkty szczęścia:&nbsp;<span>{{character.luck}}</span></p>
+                <p>Oparcie:&nbsp;<span>{{character.support}}</span></p>
             </div>
         </div>
         </div>
@@ -44,18 +44,18 @@
             <h2>Umiejętności</h2>
         </div>
         <div class="content">
-            <p><i class="fas fa-cat"></i>&nbsp;Skradanie się (Ciało): </p>
-            <p><i class="fas fa-dumbbell"></i>&nbsp;Siła (Ciało): </p>
-            <p><i class="fas fa-running"></i>&nbsp;Ruch (Ciało): </p>
-            <p><i class="fas fa-tools"></i>&nbsp;Majsterkowanie (Technika): </p>
-            <p><i class="fas fa-laptop-code"></i>&nbsp;Programowanie (Technika): </p>
-            <p><i class="fas fa-search"></i>&nbsp;Analiza (Technika): </p>
-            <p><i class="fas fa-users"></i>&nbsp;Znajomości (Serce): </p>
-            <p><i class="fas fa-hand-holding-heart"></i>&nbsp;Urok (Serce): </p>
-            <p><i class="fas fa-chalkboard-teacher"></i>&nbsp;Przewodzenie (Serce): </p>
-            <p><i class="fas fa-search-location"></i>&nbsp;Śledztwo (Umysł): </p>
-            <p><i class="fas fa-atom"></i>&nbsp;Pojmowanie (Umysł): </p>
-            <p><i class="fas fa-people-arrows"></i>&nbsp;Empatia (Umysł): </p>
+            <p><i class="fas fa-cat"></i>&nbsp;Skradanie się: <span>{{character.sneaking}}</span></p>
+            <p><i class="fas fa-dumbbell"></i>&nbsp;Siła: <span>{{character.strength}}</span></p>
+            <p><i class="fas fa-running"></i>&nbsp;Ruch: <span>{{character.movement}}</span></p>
+            <p><i class="fas fa-tools"></i>&nbsp;Majsterkowanie: <span>{{character.diy}}</span></p>
+            <p><i class="fas fa-laptop-code"></i>&nbsp;Programowanie: <span>{{character.coding}}</span></p>
+            <p><i class="fas fa-search"></i>&nbsp;Analiza: <span>{{character.analisys}}</span></p>
+            <p><i class="fas fa-users"></i>&nbsp;Znajomości: <span>{{character.conversance}}</span></p>
+            <p><i class="fas fa-hand-holding-heart"></i>&nbsp;Urok: <span>{{character.charm}}</span></p>
+            <p><i class="fas fa-chalkboard-teacher"></i>&nbsp;Przewodzenie: <span>{{character.conduction}}</span></p>
+            <p><i class="fas fa-search-location"></i>&nbsp;Śledztwo: <span>{{character.investigation}}</span></p>
+            <p><i class="fas fa-atom"></i>&nbsp;Pojmowanie: <span>{{character.understanding}}</span></p>
+            <p><i class="fas fa-people-arrows"></i>&nbsp;Empatia: <span>{{character.empathy}}</span></p>
         </div>
     </article>
 
@@ -64,11 +64,11 @@
             <h2>Stan</h2>
         </div>
         <div class="content">
-            <p>Stan 1:&nbsp;<span>{{character.status}}</span></p>
-            <p>Stan 2:&nbsp;<span></span></p>
-            <p>Stan 3:&nbsp;<span></span></p>
-            <p>Stan 4:&nbsp;<span></span></p>
-            <p>Stan 5:&nbsp;<span></span></p>
+            <p>Stan 1:&nbsp;<span>{{character.status1}}</span></p>
+            <p>Stan 2:&nbsp;<span>{{character.status2}}</span></p>
+            <p>Stan 3:&nbsp;<span>{{character.status3}}</span></p>
+            <p>Stan 4:&nbsp;<span>{{character.status4}}</span></p>
+            <p>Stan 5:&nbsp;<span>{{character.status5}}</span></p>
         </div>
     </article>
 
@@ -91,7 +91,7 @@
             <h2>Baza</h2>
         </div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, officiis!</p>
+            <p>{{character.headquarters}}</p>
         </div>
     </article>
 </section>
