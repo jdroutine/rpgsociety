@@ -1,12 +1,12 @@
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView
-from .models import Character
+from .models import Character, Home
 # def home(request):
 #     return render(request, 'home.html',{})
 
 
 class HomeView(ListView):
-    model = Character
+    model = Home
     template_name = "home.html"
 
 

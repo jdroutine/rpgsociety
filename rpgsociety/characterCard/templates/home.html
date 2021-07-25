@@ -1,16 +1,16 @@
 {% extends 'index.html' %}
 
 {% block content %}
+
+{% for home in home_list%}
+
 <section id="home">
+ 
     <article id="about">
         <header>
-            <h1>RPG<span>Society</span></h1>
+            <h1>{{home.title}}<span>{{home.titleSpan}}</span></h1>
         </header>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus ea commodi aspernatur facere provident
-            saepe voluptas eaque ad reiciendis numquam necessitatibus optio aperiam, id veniam ipsum tempora nisi, quam
-            quia
-            laboriosam culpa. At omnis distinctio praesentium deleniti voluptas, excepturi, asperiores quasi commodi
-            debitis, architecto quidem! Fugit maiores eos quidem voluptatum.</p>
+        <p>{{home.body|safe}}</p>
     </article>
     <article id="youtube">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/1htuNZp82Ck" title="YouTube video player"
@@ -19,4 +19,5 @@
             allowfullscreen></iframe>
     </article>
 </section>
+{%endfor%}
 {% endblock content %}

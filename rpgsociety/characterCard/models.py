@@ -58,8 +58,9 @@ class Character(models.Model):
 
 
 class Home(models.Model):
-    tile = models.CharField(max_length=255)
-    body = models.CharField(max_length=255)
+    title = models.CharField(max_length=255)
+    titleSpan = models.CharField(max_length=255, null=True)
+    body = models.TextField(max_length=255)
 
     def __str__(self):
-        return self.name
+        return self.title
