@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models.base import Model
 
 # Create your models here.
 
@@ -40,6 +41,11 @@ class Character(models.Model):
     luck = models.IntegerField(choices=skillChoices, null=True)
     item = models.CharField(max_length=50, null=True)
 
+    body = models.IntegerField(choices=skillChoices, null=True)
+    technique = models.IntegerField(choices=skillChoices, null=True)
+    heart = models.IntegerField(choices=skillChoices, null=True)
+    mind = models.IntegerField(choices=skillChoices, null=True)
+
     sneaking = models.IntegerField(choices=skillChoices, null=True)
     strength = models.IntegerField(choices=skillChoices, null=True)
     movement = models.IntegerField(choices=skillChoices, null=True)
@@ -52,6 +58,7 @@ class Character(models.Model):
     investigation = models.IntegerField(choices=skillChoices, null=True)
     understanding = models.IntegerField(choices=skillChoices, null=True)
     empathy = models.IntegerField(choices=skillChoices, null=True)
+    headquarters = models.TextField(max_length=255, null=True)
 
     def __str__(self):
         return self.name
