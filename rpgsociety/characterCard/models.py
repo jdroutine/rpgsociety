@@ -22,6 +22,18 @@ class Character(models.Model):
         (4, '4'),
         (5, '5')
     )
+    expChoices = (
+        ('1/10', '1'),
+        ('2/10', '2'),
+        ('3/10', '3'),
+        ('4/10', '4'),
+        ('5/10', '5'),
+        ('6/10', '6'),
+        ('7/10', '7'),
+        ('8/10', '8'),
+        ('9/10', '9'),
+        ('10/10', '10')
+    )
 
     name = models.CharField(max_length=255)
     avatar = models.ImageField(blank=True, upload_to='images')
@@ -40,6 +52,7 @@ class Character(models.Model):
     status5 = models.CharField(max_length=50, choices=statusChoices, null=True)
     luck = models.IntegerField(choices=skillChoices, null=True)
     item = models.CharField(max_length=50, null=True)
+    exp = models.CharField(max_length=50,choices=expChoices, null=True)
 
     body = models.IntegerField(choices=skillChoices, null=True)
     technique = models.IntegerField(choices=skillChoices, null=True)
