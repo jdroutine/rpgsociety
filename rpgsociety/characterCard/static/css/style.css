@@ -145,6 +145,9 @@ aside img {
     color: white;
     text-decoration: none;
 }
+#cards span{
+    color: var(--border-color);
+}
 /* Karta postaci*/
 
 .grid-container {
