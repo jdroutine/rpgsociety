@@ -60,6 +60,14 @@ class Character(models.Model):
     empathy = models.IntegerField(choices=skillChoices, null=True)
     headquarters = models.TextField(max_length=255, null=True)
 
+    realtion1 = models.CharField(max_length=255, null=True)
+    realtion2 = models.CharField(max_length=255, null=True)
+    realtion3 = models.CharField(max_length=255, null=True)
+    realtion4 = models.CharField(max_length=255, null=True)
+    realtionBn1 = models.CharField(max_length=255, null=True)
+    realtionBn2 = models.CharField(max_length=255, null=True)
+    realtionBn3 = models.CharField(max_length=255, null=True)
+
     def __str__(self):
         return self.name
 
