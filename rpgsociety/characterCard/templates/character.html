@@ -9,11 +9,12 @@
         <div>
             <h2><a href="{% url 'characterDetail' character.pk %}">{{character.name}}</a></h2>
             <img src="../static/images/anders.jpg" alt="">
-            <p>Typ: {{character.type}} </p>
-            <p>Wiek: {{character.age}}</p>
-            <p>Stan: {{character.status}}</p>
-            <p>Punkty szczęścia: {{character.luck}}</p>
-            <p>Przedmiot: {{character.item}}</p>
+            <p>Typ:&nbsp;<span>{{character.type}} </span></p>
+            <p>Wiek:&nbsp;<span>{{character.age}}</span></p>
+            <p>Stan:&nbsp;<span>{{character.status}}</span></p>
+            <p>Punkty szczęścia:&nbsp;<span>{{character.luck}}</span></p>
+            <p>Przedmiot:&nbsp;<span>{{character.item}}</span></p>
+            <p>Doświadczenie:&nbsp;<span>{{character.exp}}</span></p>
         </div>
 
         {% endfor %}
