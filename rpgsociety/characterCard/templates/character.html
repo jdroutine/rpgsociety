@@ -7,7 +7,7 @@
         {% for character in object_list %}
 
         <div>
-            <h2><a href="{% url 'characterDetail' character.pk %}">{{character.name}}</a></h2>
+            <h2>{{character.name}}</h2>
             <img src="../static/images/anders.jpg" alt="">
             <p>Typ:&nbsp;<span>{{character.type}} </span></p>
             <p>Wiek:&nbsp;<span>{{character.age}}</span></p>
@@ -15,6 +15,7 @@
             <p>Punkty szczęścia:&nbsp;<span>{{character.luck}}</span></p>
             <p>Przedmiot:&nbsp;<span>{{character.item}}</span></p>
             <p>Doświadczenie:&nbsp;<span>{{character.exp}}</span></p>
+            <a href="{% url 'characterDetail' character.pk %}"><button>Karta</button></a>
         </div>
 
         {% endfor %}

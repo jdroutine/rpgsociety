@@ -1,6 +1,6 @@
 :root {
     --main-color: #200f21;
-    --hoover-color: rgb(58, 211, 206);
+    --hover-color: rgb(58, 211, 206);
     --border-color: #e6a7f2;
 }
 * {
@@ -46,7 +46,7 @@ nav ul li a {
     text-decoration: none;
 }
 nav ul li a:hover {
-    color: var(--hoover-color);
+    color: var(--hover-color);
 }
 #social-links {
     float: right;
@@ -84,7 +84,7 @@ aside img {
 #home h1 {
     font-size: 50px;
     font-family: "DotGothic16", sans-serif;
-    color: var(--hoover-color);
+    color: var(--hover-color);
     font-weight: 800;
     letter-spacing: 2px;
 }
@@ -104,7 +104,7 @@ aside img {
 
 #youtube iframe {
     border: 1px solid #e6a7f2;
-    box-shadow: 0px 0px 20px var(--hoover-color);
+    box-shadow: 0px 0px 20px var(--hover-color);
     position: absolute;
     top: 0;
     left: 0;
@@ -115,7 +115,7 @@ aside img {
 
 #cards {
     height: 100%;
-    margin: 50px;
+    margin: 30px;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto;
@@ -124,28 +124,41 @@ aside img {
     color: white;
 }
 #cards div {
-    padding: 30px;
+    padding: 20px;
     background-color: rgba(0, 0, 0, 0.7);
     border: 3px solid var(--border-color);
-    box-shadow: 2px -2px 5px var(--hoover-color);
+    box-shadow: 2px -2px 5px var(--hover-color);
 }
 #cards div:hover {
     transform: scale(1.1);
-    box-shadow: 5px -5px 5px var(--hoover-color);
+    box-shadow: 5px -5px 5px var(--hover-color);
 }
 #cards h2 {
     font-family: "DotGothic16", sans-serif;
     font-size: 25px;
     margin-bottom: 10px;
 }
-#cards h2 :hover {
-    color: var(--hoover-color);
-}
-#cards h2 a {
-    color: white;
+#cards a{
     text-decoration: none;
 }
-#cards span{
+#cards a button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 100px;
+    padding: 5px;
+    background-color: var(--main-color);
+    border: 1px solid var(--hover-color);
+    border-radius: 20px;
+    cursor: pointer;
+    color: #ffffff;
+
+}
+#cards button:hover {
+    background-color: var(--hover-color);
+    color: var(--main-color);
+}
+#cards span {
     color: var(--border-color);
 }
 /* Karta postaci*/
@@ -161,7 +174,7 @@ aside img {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 10px;
     border: 2px solid var(--border-color);
-    box-shadow: 2px -2px 2px var(--hoover-color);
+    box-shadow: 2px -2px 2px var(--hover-color);
 }
 .grid-container .item1 .content {
     column-count: 2;
@@ -192,7 +205,7 @@ aside img {
 }
 
 .title {
-    border-bottom: 1px solid var(--hoover-color);
+    border-bottom: 1px solid var(--hover-color);
 }
 .content {
     padding-top: 10px;
@@ -241,7 +254,7 @@ footer {
         background-color: var(--main-color);
     }
     #nav-links a:hover {
-        color: var(--hoover-color);
+        color: var(--hover-color);
     }
     #social-links {
         margin: 20px;
@@ -314,7 +327,7 @@ footer {
     #home h1 {
         font-size: 30px;
         font-family: "DotGothic16", sans-serif;
-        color: var(--hoover-color);
+        color: var(--hover-color);
         font-weight: 800;
         letter-spacing: 2px;
     }
