@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<aside id="map">
+
+    {% for map in map_list %}
+
+    <!--<h2>{{map.title}}</h2>-->
+    <img src="{{map.image.url}}" alt="">
+
+    {% endfor %}
+</aside>
+{% endblock content %}

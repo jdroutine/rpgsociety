@@ -218,6 +218,13 @@ aside img {
     font-weight: bold;
     color: var(--border-color);
 }
+/*mapa*/
+#map img{
+    border: var(--border-color) 2px solid;
+    box-shadow: 0px 0px 30px var(--hover-color);
+    margin-bottom: 50px;
+}
+
 /*stopka*/
 footer {
     display: flex;
@@ -227,7 +234,7 @@ footer {
     height: 30px;
     background-color: var(--main-color);
     color: white;
-    position: absolute;
+    position: fixed;
     bottom: 0;
 }
 @media screen and (max-width: 1024px) {
@@ -338,5 +345,11 @@ footer {
     #home p {
         padding-top: 20px;
         font-size: 20px;
+    }
+    #map{
+        margin-top: 150px;
+    }
+    #map img{
+        margin:10px;
     }
 }
