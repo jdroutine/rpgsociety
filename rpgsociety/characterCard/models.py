@@ -92,3 +92,8 @@ class Home(models.Model):
 
     def __str__(self):
         return self.title
+
+class Map(models.Model):
+    title = models.CharField(max_length=255, null=True)
+    image = models.ImageField(blank=True, upload_to='images')
+    
