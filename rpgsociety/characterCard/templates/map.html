@@ -1,13 +1,12 @@
 {% extends 'index.html' %}
 
 {% block content %}
-<aside id="map">
-
+<section id="map">
     {% for map in map_list %}
-
-    <!--<h2>{{map.title}}</h2>-->
-    <img src="{{map.image.url}}" alt="">
-
+    <div>
+        <!--<h2>{{map.title}}</h2>-->
+        <a target="_blank" href="{{map.image.url}}"><img src="{{map.image.url}}" alt=""></a>
+    </div>
     {% endfor %}
-</aside>
+</section>
 {% endblock content %}

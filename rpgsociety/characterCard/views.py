@@ -23,3 +23,7 @@ class CharacterView(ListView):
 class MapView(ListView):
     model = Map
     template_name = "map.html"
+
+
+def gallery(request):
+    return render(request, 'gallery.html', {})
