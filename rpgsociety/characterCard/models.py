@@ -97,3 +97,6 @@ class Map(models.Model):
     title = models.CharField(max_length=255, null=True)
     image = models.ImageField(blank=True, upload_to='images')
     
+class Gallery(models.Model):
+    image = models.ImageField(blank=True, upload_to='images')
+    alt = models.CharField(max_length=255, null=True)

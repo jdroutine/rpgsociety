@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView
-from .models import Character, Home, Map
+from .models import Character, Home, Map, Gallery
 # def home(request):
 #     return render(request, 'home.html',{})
 
@@ -25,5 +25,6 @@ class MapView(ListView):
     template_name = "map.html"
 
 
-def gallery(request):
-    return render(request, 'gallery.html', {})
+class Gallery(ListView):
+    model = Gallery
+    template_name = "gallery.html"

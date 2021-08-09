@@ -2,25 +2,14 @@
 
 {% block content %}
 <section id="gallery">
+    
+    {% for picture in picture_list %}
     <div>
-        <a target="_blank" href="../static/images/pexels-arthouse-studio-4571757.jpg"><img src="../static/images/pexels-arthouse-studio-4571757.jpg" alt="" srcset=""></a>
+        <a target="_blank" href="{{picture.image.url}}"><img src="{{picture.image.url}}" alt="{{picture.alt}}" srcset=""></a>
     </div>
-    <div>
-        <a target="_blank" href="../static/images/pexels-cottonbro-4842494.jpg"><img src="../static/images/pexels-cottonbro-4842494.jpg" alt="" srcset=""></a>
-    </div>
-    <div>
-        <a target="_blank" href="../static/images/pexels-cottonbro-4842581.jpg"><img src="../static/images/pexels-cottonbro-4842581.jpg" alt="" srcset=""></a>
-    </div>
-    <div>
-        <a target="_blank" href="../static/images/pexels-arthouse-studio-4571757.jpg"><img src="../static/images/pexels-arthouse-studio-4571757.jpg" alt="" srcset=""></a>
-    </div>
-    <div>
-        <a target="_blank" href="../static/images/pexels-cottonbro-4842494.jpg"><img src="../static/images/pexels-cottonbro-4842494.jpg" alt="" srcset=""></a>
-    </div>
-    <div>
-        <a target="_blank" href="../static/images/pexels-cottonbro-4842581.jpg"><img src="../static/images/pexels-cottonbro-4842581.jpg" alt="" srcset=""></a>
-    </div>
+        
+    {% endfor %}
+        
 
-   
 </section>
 {% endblock content %}
