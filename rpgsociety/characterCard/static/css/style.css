@@ -127,7 +127,7 @@ aside img {
 }
 #cards div {
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.85);
     border: 3px solid var(--border-color);
     border-radius: 20px;
     box-shadow: 2px -2px 5px var(--hover-color);
@@ -173,7 +173,7 @@ aside img {
     color: white;
 }
 .grid-container > article {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.85);
     padding: 10px;
     border: 2px solid var(--border-color);
     border-radius: 20px;

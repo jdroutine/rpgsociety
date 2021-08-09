@@ -2,14 +2,10 @@
 
 {% block content %}
 <section id="gallery">
-    
-    {% for picture in picture_list %}
+    {% for picture in object_list %}
     <div>
-        <a target="_blank" href="{{picture.image.url}}"><img src="{{picture.image.url}}" alt="{{picture.alt}}" srcset=""></a>
+        <a target="_blank" href="{{picture.image.url}}"><img src="{{picture.image.url}}" alt="{{picture.alt}}"></a>
     </div>
-        
     {% endfor %}
-        
-
 </section>
 {% endblock content %}

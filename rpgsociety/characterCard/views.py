@@ -25,6 +25,6 @@ class MapView(ListView):
     template_name = "map.html"
 
 
-class Gallery(ListView):
+class GalleryView(ListView):
     model = Gallery
     template_name = "gallery.html"

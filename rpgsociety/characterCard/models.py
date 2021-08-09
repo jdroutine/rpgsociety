@@ -52,7 +52,7 @@ class Character(models.Model):
     status5 = models.CharField(max_length=50, choices=statusChoices, null=True)
     luck = models.IntegerField(choices=skillChoices, null=True)
     item = models.CharField(max_length=50, null=True)
-    exp = models.CharField(max_length=50,choices=expChoices, null=True)
+    exp = models.CharField(max_length=50, choices=expChoices, null=True)
 
     body = models.IntegerField(choices=skillChoices, null=True)
     technique = models.IntegerField(choices=skillChoices, null=True)
@@ -93,10 +93,13 @@ class Home(models.Model):
     def __str__(self):
         return self.title
 
+
 class Map(models.Model):
     title = models.CharField(max_length=255, null=True)
     image = models.ImageField(blank=True, upload_to='images')
-    
+
+
 class Gallery(models.Model):
     image = models.ImageField(blank=True, upload_to='images')
     alt = models.CharField(max_length=255, null=True)
+
