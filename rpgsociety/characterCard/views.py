@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.template import RequestContext
 from django.views.generic import ListView, DetailView
 from .models import Character, Home, Map, Gallery
 # def home(request):

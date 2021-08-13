@@ -372,10 +372,10 @@ footer {
         width: 100%;
         justify-content: space-around;
     }
-    #map{
+    #map {
         margin-top: 100px;
     }
-    #map div img{
+    #map div img {
         width: 95%;
         display: grid;
         margin: 0 auto;
@@ -408,14 +408,13 @@ footer {
         padding-top: 20px;
         font-size: 20px;
     }
-   
-    #map{
+
+    #map {
         margin-top: 150px;
         width: 100%;
     }
 
-    #map div img{
+    #map div img {
         width: 95%;
     }
-
 }
