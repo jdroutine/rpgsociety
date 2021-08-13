@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure--6*&lh!-dspq-6dv)c%w3@!p90hb&(k=-so_ivrjp3v76gxjlw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '159.89.97.27', 'www.rpgsociety.pl']
+ALLOWED_HOSTS = ['159.89.97.27', 'www.rpgsociety.pl']
 
 
 # Application definition
@@ -73,26 +73,26 @@ WSGI_APPLICATION = 'rpgsociety.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-if DEBUG:
+# if DEBUG:
 
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
-    }
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.sqlite3',
+#             'NAME': BASE_DIR / 'db.sqlite3',
+#         }
+#     }
 
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'myproject',
-            'USER': 'jd',
-            'PASSWORD': 'Gumian666',
-            'HOST': 'localhost',
-            'PORT': '',
-        }
+# else:
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'myproject',
+        'USER': 'jd',
+        'PASSWORD': 'Gumian666',
+        'HOST': 'localhost',
+        'PORT': '',
     }
+}
 
 
 # Password validation
