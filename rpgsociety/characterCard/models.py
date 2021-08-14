@@ -16,6 +16,7 @@ class Character(models.Model):
     )
     # skill point choices
     skillChoices = (
+        (0,'0'),
         (1, '1'),
         (2, '2'),
         (3, '3'),
