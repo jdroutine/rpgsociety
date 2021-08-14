@@ -133,8 +133,7 @@ aside img {
     box-shadow: 2px -2px 5px var(--hover-color);
 }
 #cards div img{
-    max-height: 200px;
-    max-width: 200px;
+    margin: 0 auto;
     object-fit: cover;
 }
 #cards div:hover {
