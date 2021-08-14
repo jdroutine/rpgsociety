@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure--6*&lh!-dspq-6dv)c%w3@!p90hb&(k=-so_ivrjp3v76gxjlw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['165.227.169.123', 'www.rpgsociety.pl']
 
