@@ -86,9 +86,9 @@ WSGI_APPLICATION = 'rpgsociety.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'myproject',
-        'USER': 'jd',
-        'PASSWORD': 'Gumian666',
+        'NAME': 'rpgsocietydb',
+        'USER': 'damian',
+        'PASSWORD': 'damian666',
         'HOST': 'localhost',
         'PORT': '',
     }
