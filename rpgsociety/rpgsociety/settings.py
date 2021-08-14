@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure--6*&lh!-dspq-6dv)c%w3@!p90hb&(k=-so_ivrjp3v76gxjlw
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['159.89.97.27', 'www.rpgsociety.pl']
+ALLOWED_HOSTS = ['165.227.169.123', 'www.rpgsociety.pl']
 
 
 # Application definition
