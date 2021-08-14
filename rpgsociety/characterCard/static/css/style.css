@@ -132,15 +132,7 @@ aside img {
     border-radius: 20px;
     box-shadow: 2px -2px 5px var(--hover-color);
 }
-.avatar {
-    width: 200px;
-    height: 200px;
-}
-.avatar img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
+
 #cards div:hover {
     transform: scale(1.1);
     box-shadow: 5px -5px 5px var(--hover-color);
