@@ -421,4 +421,7 @@ footer {
     #map div img {
         width: 95%;
     }
+    .grid-container .content p{
+        font-size: 10px;
+    }
 }
