@@ -131,6 +131,12 @@ aside img {
     border: 3px solid var(--border-color);
     border-radius: 20px;
     box-shadow: 2px -2px 5px var(--hover-color);
+    height: 400px;
+    width: 200px;
+}
+#cards div img{
+    width: 100%;
+    height: auto;
 }
 
 #cards div:hover {
