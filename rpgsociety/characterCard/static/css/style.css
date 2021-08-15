@@ -425,7 +425,7 @@ footer {
         width: 95%;
     }
     
-    .content p{
-        font-size: 15px;
+    .grid-container .content {
+        font-size: 12px;
     }
 }
