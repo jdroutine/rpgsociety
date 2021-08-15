@@ -424,4 +424,8 @@ footer {
     #map div img {
         width: 95%;
     }
+    
+    .content p{
+        font-size: 15px;
+    }
 }
