@@ -358,7 +358,7 @@ footer {
         grid-template-columns: auto;
     }
     .grid-container .content {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .grid-container .item1 .content {
