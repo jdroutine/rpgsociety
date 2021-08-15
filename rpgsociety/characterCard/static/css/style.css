@@ -134,7 +134,7 @@ aside img {
     height: 400px;
     width: 200px;
 }
-#cards div img{
+#cards div img {
     width: 100%;
     height: auto;
 }
@@ -357,9 +357,6 @@ footer {
         display: grid;
         grid-template-columns: auto;
     }
-    .grid-container .content {
-        font-size: 15px;
-    }
 
     .grid-container .item1 .content {
         column-count: 1;
@@ -423,9 +420,5 @@ footer {
 
     #map div img {
         width: 95%;
-    }
-    
-    .grid-container .content {
-        font-size: 12px;
     }
 }
