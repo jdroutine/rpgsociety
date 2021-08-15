@@ -179,6 +179,9 @@ aside img {
     margin: 50px;
     color: white;
 }
+.grid-container .content{
+    font-size: 12px;
+}
 .grid-container > article {
     background-color: rgba(0, 0, 0, 0.85);
     padding: 10px;
@@ -420,8 +423,5 @@ footer {
 
     #map div img {
         width: 95%;
-    }
-    .grid-container .content p{
-        font-size: 10px;
     }
 }
