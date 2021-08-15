@@ -9,8 +9,8 @@
     <script src="https://kit.fontawesome.com/1bcaf649c2.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../static/css/style.css">
-    <title>{% block title %}{%endblock title %}</title>
+    <link rel="stylesheet" href="{% static '/css/style.css' %}?{% now "U" %}">
+    <title>{% block title %}RPG Society{%endblock title %}</title>
 </head>
 
 <body>
