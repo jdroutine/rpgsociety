@@ -179,7 +179,7 @@ aside img {
     margin: 50px;
     color: white;
 }
-.grid-container .content{
+.grid-container p, .grid-container span{
     font-size: 12px;
 }
 .grid-container > article {
