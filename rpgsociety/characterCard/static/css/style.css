@@ -68,6 +68,7 @@ aside img {
 
 /*strona główna*/
 #home {
+    max-width: 1080px;
     min-height: 315px;
     height: 100%;
     margin: 50px;

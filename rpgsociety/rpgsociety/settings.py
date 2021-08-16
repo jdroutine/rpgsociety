@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure--6*&lh!-dspq-6dv)c%w3@!p90hb&(k=-so_ivrjp3v76gxjlw
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['165.227.169.123', 'www.rpgsociety.pl']
+ALLOWED_HOSTS = ['165.227.169.123', 'www.rpgsociety.pl', '127.0.0.1']
 
 
 # Application definition
@@ -73,14 +73,13 @@ WSGI_APPLICATION = 'rpgsociety.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-# if DEBUG:
 
-#     DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.sqlite3',
-#             'NAME': BASE_DIR / 'db.sqlite3',
-#         }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
+# }
 
 # else:
 DATABASES = {

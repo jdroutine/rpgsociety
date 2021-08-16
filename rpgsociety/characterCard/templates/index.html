@@ -9,14 +9,14 @@
     <script src="https://kit.fontawesome.com/1bcaf649c2.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{% static '/css/style.css' %}?{% now "U" %}">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}?{% now " U" %}">
     <title>{% block title %}RPG Society{%endblock title %}</title>
 </head>
 
 <body>
     <nav>
         <div id="logo">
-            <a href="{% url 'home' %}""><img src="../static/images/rpgsocietyLogo.png" alt=""></a>
+            <a href="{% url 'home' %}""><img src=" ../static/images/rpgsocietyLogo.png" alt=""></a>
         </div>
         <ul>
             <div id="nav-links">
@@ -25,7 +25,8 @@
                 <li><a href="{% url 'gallery' %}">Galeria</a></li>
                 <div id="social-links">
                     <li><a href="https://www.instagram.com/jd.devroutine/"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCV9khf9FYqr15_yL3upA2Ng"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCV9khf9FYqr15_yL3upA2Ng"><i
+                                class="fab fa-youtube"></i></a></li>
                 </div>
             </div>
             <div id="hamburger">
@@ -34,15 +35,19 @@
             </div>
         </ul>
     </nav>
-        {% block content %}
+    {% block content %}
 
-        {% endblock content %}
+    {% endblock content %}
     <footer>
         <div>
             <h3>&copy; 2021 by jd.devroutine</h3>
         </div>
+        <div class="cookies">
+            <h3>Polityka cookies/h3>
+        </div>
     </footer>
     <script src="../static/js/nav.js"></script>
+    <script src="https://skrypt-cookies.pl/id/d98c637bfe1a14f3.js"></script>
 </body>
 
 </html>
