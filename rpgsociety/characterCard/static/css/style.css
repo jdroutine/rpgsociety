@@ -292,6 +292,9 @@ footer {
     position: fixed;
     bottom: 0;
 }
+.cookies{
+    float: right;
+}
 @media screen and (max-width: 1024px) {
     /*nawigacja*/
     nav {
