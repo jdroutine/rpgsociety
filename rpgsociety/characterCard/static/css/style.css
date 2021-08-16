@@ -69,7 +69,7 @@ aside img {
 /*strona główna*/
 #home {
 
-    min-height: 350px;
+    min-height: 345px;
     height: 100%;
     margin: 50px;
     padding: 20px;
@@ -281,6 +281,7 @@ aside img {
 /*stopka*/
 footer {
     margin: 0 auto;
+    padding: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
